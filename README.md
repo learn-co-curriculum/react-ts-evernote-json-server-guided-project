@@ -1,10 +1,17 @@
 # Phase 2 Guided Project Guidelines
 
-In this guided project, we'll be building an Evernote-like application with React.
+We've learned a lot, congratulations on making it this far! React and TypeScript
+can be difficult topics to digest. It takes time and practice, and that's what
+you'll be doing in this guided project.
+
+To practice what we've learned, you'll be building an Evernote-like application
+with React. Additionally, your application should be written in TypeScript - so
+don't forget about typing!
 
 Your goal will be to complete the baseline deliverables using the provided
 starter code and then make this project your own by building out unique stretch
-goals. Some suggestions are listed below, but try to be creative!
+goals. Some suggestions are listed below, but feel free to be creative and think
+of your own!
 
 ## Requirements
 
@@ -50,8 +57,8 @@ Your backend API will be running on `http://localhost:3000`.
 
 ### User ID
 
-The seed file should create one user for you, so your default `userId` should
-be `1`. You can check the `db/db.json` file to make sure.
+The seed file should create one user for you, so your default `userId` should be
+`1`. You can check the `db/db.json` file to make sure.
 
 #### Routes
 
@@ -98,11 +105,11 @@ baseline deliverables you need to complete:
 
 - [ ] At the bottom of your left sidebar, show a `New` button.
 - [ ] Clicking `New` will create a new note via a `POST` request with some
-      default title and body. **NOTE**: You don't have to use any kind of `<form>`
-      element for this deliverable; you can create an object with a default title
-      and body text when the button is clicked. Make sure to check the
-      [Routes](#Routes) section of this README to determine what data you need in
-      the body of your request.
+      default title and body. **NOTE**: You don't have to use any kind of
+      `<form>` element for this deliverable; you can create an object with a
+      default title and body text when the button is clicked. Make sure to check
+      the [Routes](#Routes) section of this README to determine what data you
+      need in the body of your request.
 - [ ] This new note should appear in the sidebar.
 
 ![completed create notes](https://curriculum-content.s3.amazonaws.com/phase-2/react-hooks-evernote-json-server-guided-project/react-evernote-create.gif)
