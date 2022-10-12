@@ -20,40 +20,20 @@ of your own!
 
 ## Setup
 
-To get started, fork and clone this repository.
+The project provides the backend JSON Server API code for you in `src/db`, and
+has starter code for the React frontend in `src/components`. The latter is where
+you will be doing all your work.
 
-The codebase is split up into a JSON Server API backend and a React frontend.
+To get started, fork and clone this repository, then:
 
-### Frontend
-
-To setup and run your frontend:
-
-```console
-$ npm install
-$ npm start
-```
-
-This React app will be running on `http://localhost:4000`.
-
-### Backend
-
-First, set up your database by running:
-
-```console
-$ npm run seed
-```
-
-This will seed some starter data for you in the `db/db.json` file. Any time you
-want to reset your database to its original state, just run `npm run seed` again
-to overwrite your data with some fresh seed data.
-
-To run `json-server`, run:
-
-```console
-$ npm run server
-```
-
-Your backend API will be running on `http://localhost:3000`.
+1. Setup and run your frontend with `npm install && npm start`. This React app
+   will be running on `http://localhost:4000`.
+1. Seed your json-server database with `npm run seed`.
+   - This will seed some starter data for you in the `db/db.json` file. Any time
+     you want to reset your database to its original state, just run
+     `npm run seed` again to overwrite your data with some fresh seed data.
+1. Start the server with `npm run server`. This backend API will be running on
+   `http://localhost:3000`.
 
 ### User ID
 
@@ -69,7 +49,7 @@ The seed file should create one user for you, so your default `userId` should be
 | POST   | `/notes`     | `'Content-Type': 'application/json'`;`'Accept': 'application/json'` | title, body, userId |
 | PATCH  | `/notes/:id` | `'Content-Type': 'application/json'`;`'Accept': 'application/json'` | title, body, userId |
 
-**Tips:**
+**Bonus Tip:**
 
 - Test out your routes with [Postman](https://www.getpostman.com/) to see how
   they work and what they return.
@@ -77,6 +57,7 @@ The seed file should create one user for you, so your default `userId` should be
 ## Provided Code
 
 - All CSS styles are provided for you.
+- The JSON Server API is provided for you.
 - Many components are provided for you, but most are not completely functional.
   It is your job to read the code and figure out how to incorporate it into your
   app.
@@ -144,3 +125,12 @@ Some suggestions:
 - Rich text formatting
 - Tagging
 - Emailing notes
+
+To pass this project, you need to add at least **one extra feature** that was
+not outlined in the required deliverables. You are free to use any of the
+suggestions above, or come up with your own!
+
+## Submission
+
+Once you've completed your project, be sure to submit the link to your forked
+repository on Canvas and give yourself a pat on the back!
