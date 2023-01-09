@@ -1,10 +1,17 @@
 # Phase 2 Guided Project Guidelines
 
-In this guided project, we'll be building an Evernote-like application with React.
+We've learned a lot, congratulations on making it this far! React and TypeScript
+can be difficult topics to digest. It takes time and practice, and that's what
+you'll be doing in this guided project.
+
+To practice what we've learned, you'll be building an Evernote-like application
+with React. Additionally, your application should be written in TypeScript - so
+don't forget about typing!
 
 Your goal will be to complete the baseline deliverables using the provided
 starter code and then make this project your own by building out unique stretch
-goals. Some suggestions are listed below, but try to be creative!
+goals. Some suggestions are listed below, but feel free to be creative and think
+of your own!
 
 ## Requirements
 
@@ -13,45 +20,25 @@ goals. Some suggestions are listed below, but try to be creative!
 
 ## Setup
 
-To get started, fork and clone this repository.
+The project provides the backend JSON Server API code for you in `src/db`, and
+has starter code for the React frontend in `src/components`. The latter is where
+you will be doing all your work.
 
-The codebase is split up into a JSON Server API backend and a React frontend.
+To get started, fork and clone this repository, then:
 
-### Frontend
-
-To setup and run your frontend:
-
-```console
-$ npm install
-$ npm start
-```
-
-This React app will be running on `http://localhost:4000`.
-
-### Backend
-
-First, set up your database by running:
-
-```console
-$ npm run seed
-```
-
-This will seed some starter data for you in the `db/db.json` file. Any time you
-want to reset your database to its original state, just run `npm run seed` again
-to overwrite your data with some fresh seed data.
-
-To run `json-server`, run:
-
-```console
-$ npm run server
-```
-
-Your backend API will be running on `http://localhost:3000`.
+1. Setup and run your frontend with `npm install && npm start`. This React app
+   will be running on `http://localhost:4000`.
+1. Seed your json-server database with `npm run seed`.
+   - This will seed some starter data for you in the `db/db.json` file. Any time
+     you want to reset your database to its original state, just run
+     `npm run seed` again to overwrite your data with some fresh seed data.
+1. Start the server with `npm run server`. This backend API will be running on
+   `http://localhost:3000`.
 
 ### User ID
 
-The seed file should create one user for you, so your default `userId` should
-be `1`. You can check the `db/db.json` file to make sure.
+The seed file should create one user for you, so your default `userId` should be
+`1`. You can check the `db/db.json` file to make sure.
 
 #### Routes
 
@@ -62,7 +49,7 @@ be `1`. You can check the `db/db.json` file to make sure.
 | POST   | `/notes`     | `'Content-Type': 'application/json'`;`'Accept': 'application/json'` | title, body, userId |
 | PATCH  | `/notes/:id` | `'Content-Type': 'application/json'`;`'Accept': 'application/json'` | title, body, userId |
 
-**Tips:**
+**Bonus Tip:**
 
 - Test out your routes with [Postman](https://www.getpostman.com/) to see how
   they work and what they return.
@@ -70,6 +57,7 @@ be `1`. You can check the `db/db.json` file to make sure.
 ## Provided Code
 
 - All CSS styles are provided for you.
+- The JSON Server API is provided for you.
 - Many components are provided for you, but most are not completely functional.
   It is your job to read the code and figure out how to incorporate it into your
   app.
@@ -98,11 +86,11 @@ baseline deliverables you need to complete:
 
 - [ ] At the bottom of your left sidebar, show a `New` button.
 - [ ] Clicking `New` will create a new note via a `POST` request with some
-      default title and body. **NOTE**: You don't have to use any kind of `<form>`
-      element for this deliverable; you can create an object with a default title
-      and body text when the button is clicked. Make sure to check the
-      [Routes](#Routes) section of this README to determine what data you need in
-      the body of your request.
+      default title and body. **NOTE**: You don't have to use any kind of
+      `<form>` element for this deliverable; you can create an object with a
+      default title and body text when the button is clicked. Make sure to check
+      the [Routes](#Routes) section of this README to determine what data you
+      need in the body of your request.
 - [ ] This new note should appear in the sidebar.
 
 ![completed create notes](https://curriculum-content.s3.amazonaws.com/phase-2/react-hooks-evernote-json-server-guided-project/react-evernote-create.gif)
@@ -137,3 +125,12 @@ Some suggestions:
 - Rich text formatting
 - Tagging
 - Emailing notes
+
+To pass this project, you need to add at least **one extra feature** that was
+not outlined in the required deliverables. You are free to use any of the
+suggestions above, or come up with your own!
+
+## Submission
+
+Once you've completed your project, be sure to submit the link to your forked
+repository on Canvas and give yourself a pat on the back!

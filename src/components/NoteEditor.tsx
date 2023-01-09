@@ -1,5 +1,3 @@
-import React from "react";
-
 function NoteEditor() {
   return (
     <form className="note-editor">
